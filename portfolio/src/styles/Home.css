@@ -6,6 +6,7 @@
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
   background-color: #daffef;
+  font-family: "Roboto", sans-serif;
 }
 
 @keyframes fadeIn {

@@ -1,0 +1,28 @@
+.back {
+  background: linear-gradient(to top, #5d737e, #daffef);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 75vh;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.btnBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; /* Push the content to the bottom */
+}
+
+.btn {
+  width: 40px;
+  margin: 0 10px;
+}
+
+.tag {
+  text-align: center;
+  margin: 10px 0;
+  color: #fff;
+}

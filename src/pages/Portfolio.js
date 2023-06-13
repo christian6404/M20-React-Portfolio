@@ -3,40 +3,39 @@ import "../styles/Portfolio.css";
 
 const projects = [
   {
-    title: "Project 1",
-    imageSrc: "path/to/project1-image.png",
-    deployLink: "https://example.com/project1",
-    githubLink: "https://github.com/example/project1",
+    title: "Fitness Web App",
+    imageSrc: "./fitnessapp.png",
+    deployLink: "https://tskinner429.github.io/super-team-project/",
+    githubLink: "https://github.com/tskinner429/super-team-project",
   },
   {
-    title: "Project 2",
+    title: "Steam Game Reviews",
     imageSrc: "path/to/project2-image.png",
-    deployLink: "https://example.com/project2",
-    githubLink: "https://github.com/example/project2",
+    deployLink: "https://stark-beyond-75497.herokuapp.com/",
+    githubLink: "https://github.com/kylemoely/Steam-Game-Review",
   },
   {
-    title: "Project 3",
+    title: "Browser text editor",
     imageSrc: "path/to/project3-image.png",
-    deployLink: "https://example.com/project3",
-    githubLink: "https://github.com/example/project3",
+    deployLink: "https://c19-text-editor-by-christian.herokuapp.com/",
+    githubLink: "https://github.com/christian6404/c19-Text-Editor",
   },
   {
-    title: "Project 4",
+    title: "README.md generator",
     imageSrc: "path/to/project4-image.png",
-    deployLink: "https://example.com/project4",
-    githubLink: "https://github.com/example/project4",
+    githubLink: "https://github.com/christian6404/readMeGen",
   },
   {
-    title: "Project 5",
+    title: "Mongo.db Social Networking Backend",
     imageSrc: "path/to/project5-image.png",
-    deployLink: "https://example.com/project5",
-    githubLink: "https://github.com/example/project5",
+    githubLink:
+      "https://github.com/christian6404/C18-noSQL-Social-Networking-App",
   },
   {
-    title: "Project 6",
+    title: "Local Storage Note Taker",
     imageSrc: "path/to/project6-image.png",
-    deployLink: "https://example.com/project6",
-    githubLink: "https://github.com/example/project6",
+    deployLink: "https://christians-note-taker-app.herokuapp.com/",
+    githubLink: "https://github.com/christian6404/notetaker",
   },
 ];
 
@@ -47,7 +46,7 @@ function Portfolio() {
       <div className="projectList">
         {projects.map((project, index) => (
           <div className="projectItem" key={index}>
-            <img src={project.imageSrc} alt={project.title} />
+            {/* <img src={project.imageSrc} alt={project.title} /> */}
             <div className="projectTitle">{project.title}</div>
             <div className="projectLinks">
               <a

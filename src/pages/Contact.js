@@ -27,16 +27,13 @@ function ContactForm() {
 
     setErrors(errors);
 
-    return Object.keys(errors).length === 0; // Returns true if there are no errors
+    return Object.keys(errors).length === 0;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (validateForm()) {
-      // Form submission logic goes here
-      // You can make an API call or perform any other action with the form data
-      // Reset the form fields and show a success message if needed
       setName("");
       setEmail("");
       setMessage("");
@@ -47,7 +44,6 @@ function ContactForm() {
   };
 
   const isValidEmail = (email) => {
-    // Regular expression for email validation
     const emailRegex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
     return emailRegex.test(email);
   };
